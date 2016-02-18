@@ -1,0 +1,52 @@
+Administrator@USER-20150430YK MINGW64 ~
+
+安装git 
+http://bbs.nfa5.com/github/41344.html
+
+cd /e/myCode/gitRepositories
+
+因为Git是分布式版本控制系统，所以需要填写用户名和邮箱作为一个标识。
+git config --global user.name "mmazxx";
+git config --global user.email "mmazxx@sina.com";
+
+git init 通过命令 git init 把当前目录变成git可以管理的仓库
+
+git add readme.txt 增加一个文件
+git commit -m "要理解改项目，请看README.md" 增加一个文件注释
+git add  README.md
+
+git add -A: [<path>]表示把<path>中所有tracked文件中被修改过或已删除文件和所有untracted的文件信息添加到索引库。
+省略<path>表示.,即当前目录。
+
+我们可以通过git add -i [<path>]命令查看<path>中被所有修改过或已删除文件但没有提交的文件，
+并通过其revert子命令可以查看<path>中所有untracted的文件，同时进入一个子命令系统。
+
+
+git status
+
+git log 查看下历史记录
+
+git reset  –hard HEAD^ ;回退到上一个版本
+
+
+首先在本地创建ssh key；
+
+ssh-keygen -t rsa -C "mmazxx@sina.com"
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5CTFm+DOY+ylibWuMd9vOXsRoqzBYdOVg6SnsnQ8vmLGN4h4+/mKz95WKODHEZCHlBRRteIaTM67UVorsOudU5FIFjGdBnDF38DUt5979Dv8sGq9c09bc1V2w7Cihz4b/428X6K4qW9NQFmMUlM59hcaICwooOsmPKAqhRL+QxgxcUZB7z+zYlPUa82CkmDf4MHA9W9gFETzFhPc0kwVM+R02EqFd2z8d0OhRJkNfZq+YyPkyv/qBfgiZGCcaxTlG/3yj1L7hd5nQ1vejK5qaGTz2gk5giu60LOPX7f4NUih9p68EEUK52ThUGa60+M47yEhHJIxNGYjINuHaMxOr mmazxx@sina.com
+添加到github
+
+$ ssh -T git@github.com 本地连接github
+
+
+进入要上传的仓库，右键git bash，添加远程地址：
+
+$ git remote add origin git@github.com:AmumuGitHub/gitRepositoriesTest.git
+
+git add readme.txt
+git commit -m "要理解改项目，请看readme.txt"
+git push origin master
+git pull origin master
+
+http://www.open-open.com/lib/view/1394860381103
+git  
