@@ -5,7 +5,7 @@ http://bbs.nfa5.com/github/41344.html
 
 cd /e/myCode/gitRepositories
 
-因为Git是分布式版本控制系统，所以需要填写用户名和邮箱作为一个标识。
+因为Git是分布式版本控制系统，所以需要填写用  户名和邮箱作为一个标识。
 git config --global user.name "mmazxx";
 git config --global user.email "mmazxx@sina.com";
 
