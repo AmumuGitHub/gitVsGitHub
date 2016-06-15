@@ -41,10 +41,10 @@ $ ssh -T git@github.com 本地连接github
 
 进入要上传的仓库，右键git bash，添加远程地址：
 
-$ git remote add origin git@github.com:AmumuGitHub/gitRepositoriesTest.git
+$ git remote add origin   git@github.com:AmumuGitHub/gitRepositoriesTest.git
 
-git add readme.txt
-git commit -m "要理解改项目，请看readme.txt"
+git add readme.txt  
+git commit -m "要理解改项目，请看看看readme.txt"
 git push origin master
 git pull origin master
 
